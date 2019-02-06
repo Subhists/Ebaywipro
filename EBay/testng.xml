@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AndroidNativeSuite" verbose="1" parallel="tests" thread-count="2">
+
+    <test name="Android Smoke">
+
+
+        <parameter name="automationName" value="uiautomator2"/>
+        <parameter name="deviceName" value="Nexus5s"/>
+        <parameter name="udid" value="ZF622447BQ"/>
+        <parameter name="platformName" value="Android"/>
+        <parameter name="platformVersion" value="7"/>
+        <parameter name="appPackage" value="com.ebay.mobile"/>
+        <parameter name="appActivity" value="com.eaby.mobile.activities.splash.MainActivity"/>
+        <parameter name="port" value="4723"/>
+        <parameter name="systemPort" value="8200"/>
+
+        <classes>
+            <class name="com.ebay.tests.PurchaseTestCases"/>
+        </classes>
+
+    </test>
+
+</suite>
